@@ -5,15 +5,11 @@ import django_on_heroku
 import dj_database_url
 import environ
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
 #teste1
->>>>>>> 424a6b920 (first commit)
-=======
 
->>>>>>> d8cc8ad98 (more)
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -25,29 +21,20 @@ environ.Env.read_env()
 # SECURITY WARNING: keep the secret key used in production secret!
 #SECRET_KEY = os.environ.get('SECRET_KEY')
 SECRET_KEY = env('SECRET_KEY')
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
 #print(SECRET_KEY, 'teste')
->>>>>>> 424a6b920 (first commit)
-=======
 
->>>>>>> d8cc8ad98 (more)
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = os.environ.get('DEBUG')
 DEBUG = env('DEBUG')
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+
 print(DEBUG)
 #DEBUG = False
 
 # ALLOWED_HOSTS = []
->>>>>>> 424a6b920 (first commit)
-=======
->>>>>>> d8cc8ad98 (more)
+
 
 # if not DEBUG:
 #     ALLOWED_HOSTS += [os.environ.get('DJANGO_ALLOWED_HOST')]
@@ -283,8 +270,5 @@ django_on_heroku.settings(locals())
 
 options = DATABASES['default'].get('OPTIONS', {})
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 424a6b920 (first commit)
 options.pop('sslmode', None)
