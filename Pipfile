@@ -21,10 +21,7 @@ pyyaml = "*"
 pillow = "*"
 schedule = "*"
 django-environ = "*"
-<<<<<<< HEAD
 gunicorn = "*"
-=======
->>>>>>> 424a6b920 (first commit)
 
 [dev-packages]
 flake8 = "*"
